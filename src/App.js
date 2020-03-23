@@ -72,9 +72,9 @@ function App() {
               </div>
 
               <div className='link-container'>
-                <Link to='https://tietheknot.netlify.com/' className='links link2'>
+                <a href='https://tietheknot.netlify.com/' className='links link2'>
                   Home
-                </Link>
+                </a>
                 <Link to='/signup' className='links link2'>
                   Signup
                 </Link>
