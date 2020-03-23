@@ -50,18 +50,36 @@ function App() {
         <div className='App'>
           <nav>
             <div className='navigation'>
-              <Link to='/' className='logo'>
+              <a href='https://tietheknot.now.sh/' className='logo'>
                 <img src={logo} alt='logo' />
-              </Link>
+              </a>
+              <div className='navLink-container'>
+                <Link to='/' className='links link'>
+                  Planning Tools
+                </Link>
+                <Link to='/' className='links link'>
+                  Wedding Planners
+                </Link>
+                <a href='https://tietheknot.netlify.com/photos.html' className='links link'>
+                  Photos
+                </a>
+                <Link to='/' className='links link'>
+                 Ideas + Advice
+                </Link> 
+                <a href='https://tietheknot.netlify.com/about-us.html' className='links link'>
+                  About Us
+                </a>
+              </div>
+
               <div className='link-container'>
-                <Link to='/' className='links'>
+                <Link to='/' className='links link2'>
                   Home
                 </Link>
-                <Link to='/register' className='links'>
-                  Register
+                <Link to='/signup' className='links link2'>
+                  Signup
                 </Link>
-                <Link to='/login' className='links'>
-                  Login
+                <Link to='/login' className='links link2'>
+                  Log In
                 </Link>
                 {localStorage.getItem('token') ? (
                   <ProtectedLink id={currentUser} />
@@ -70,7 +88,7 @@ function App() {
             </div>
           </nav>
           <Route exact path='/' component={Home} />
-          <Route exact path='/register' component={Register} />
+          <Route exact path='/signup' component={Register} />
           <Route
             exact
             path='/login'
