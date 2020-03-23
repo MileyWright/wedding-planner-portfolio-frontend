@@ -50,29 +50,29 @@ function App() {
         <div className='App'>
           <nav>
             <div className='navigation'>
-              <a href='https://tietheknot.now.sh/' className='logo'>
+              <a href='https://tietheknot.netlify.com/' className='logo'>
                 <img src={logo} alt='logo' />
               </a>
               <div className='navLink-container'>
-                <Link to='/' className='links link'>
+                <a href='https://tietheknot.netlify.com/' className='links link'>
                   Planning Tools
-                </Link>
-                <Link to='/' className='links link'>
+                </a>
+                <a href='https://tietheknot.now.sh' className='links link'>
                   Wedding Planners
-                </Link>
+                </a>
                 <a href='https://tietheknot.netlify.com/photos.html' className='links link'>
                   Photos
                 </a>
-                <Link to='/' className='links link'>
+                <a href='https://tietheknot.netlify.com/' className='links link'>
                  Ideas + Advice
-                </Link> 
+                </a> 
                 <a href='https://tietheknot.netlify.com/about-us.html' className='links link'>
                   About Us
                 </a>
               </div>
 
               <div className='link-container'>
-                <Link to='/' className='links link2'>
+                <Link to='https://tietheknot.netlify.com/' className='links link2'>
                   Home
                 </Link>
                 <Link to='/signup' className='links link2'>
