@@ -12,7 +12,7 @@ import { axiosWithAuth } from './Components/Authentication/axiosWithAuth';
 import ProtectedRoute from './Components/Authentication/ProtectedRoute';
 import UserProfile from './Components/UserProfile';
 import profileIcon from './Assets/user-circle-solid.png';
-import ringIcon from './Assets/wedding-rings-black.png';
+import logo from './Assets/Tie the Knot Logo (Transparent).png';
 
 function App() {
   const [weddingEvent, setWeddingEvent] = useState([]);
@@ -51,8 +51,7 @@ function App() {
           <nav>
             <div className='navigation'>
               <Link to='/' className='logo'>
-                <img src={ringIcon} alt='logo' />
-                <h1>Wedding Planner Portfolio</h1>
+                <img src={logo} alt='logo' />
               </Link>
               <div className='link-container'>
                 <Link to='/' className='links'>
