@@ -42,7 +42,7 @@ export default function Login(props) {
 
   return (
     <div className='form-container'>
-      <h1>Sign In</h1>
+      <h1>Login</h1>
       <form className='login-form' onSubmit={handleSubmit}>
         <input
           type='text'
@@ -61,7 +61,7 @@ export default function Login(props) {
           className='field-container'
         />
         <p>
-          Don't have an account? Sign up <Link to='/register'>here</Link>
+          Don't have an account? Sign up <Link to='/signup'>here</Link>
         </p>
         <input type='submit' className='button' />
       </form>

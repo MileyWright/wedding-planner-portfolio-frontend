@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
     <div>
-      <h1>Wedding's</h1>
+      <h1>Real Wedding's</h1>
       <div className='home'>
         {weddingEvent.map(event => (
           <WeddingCard
